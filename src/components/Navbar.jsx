@@ -4,7 +4,7 @@ import { Box, Button, Flex, HStack, Heading, Spacer, Text } from '@chakra-ui/rea
 
 const Navbar = () => {
     return (
-        <Flex as="nav" p="10px" alignItems="center">
+        <Flex as="nav" p="10px" alignItems="center" mb="40px">
             <Heading as="h1">Task Manager</Heading>
 
             <Spacer />
