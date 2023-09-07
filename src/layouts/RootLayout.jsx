@@ -6,6 +6,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 
 // Components
 import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
 
 const RootLayout = () => {
@@ -18,7 +19,7 @@ const RootLayout = () => {
                 bg="purple.400"
                 p={{ base: "20px", lg: "30px" }}
             >
-                <span>Sidebar</span>
+                <Sidebar />
             </GridItem>
 
             <GridItem 
