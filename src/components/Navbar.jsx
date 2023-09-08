@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Chakra UI
-import { Box, Button, Flex, HStack, Heading, Spacer, Text, useToast } from '@chakra-ui/react';
+import { Avatar, Box, Button, Flex, HStack, Heading, Spacer, Text, useToast } from '@chakra-ui/react';
 import { UnlockIcon } from '@chakra-ui/icons';
 
 
@@ -30,7 +30,7 @@ const Navbar = () => {
             <Spacer />
 
             <HStack spacing="20px">
-                <Box bg="gray.200" p="10px">M</Box>
+                <Avatar src='' />
                 <Text>arifozberk@gmail.com</Text>
                 <Button colorScheme="purple" onClick={showToast}>Logout</Button>
             </HStack>

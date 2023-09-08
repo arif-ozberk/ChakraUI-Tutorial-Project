@@ -3,7 +3,7 @@ import React from 'react';
 // Styles
 
 // Chakra UI
-import { Box, Button, Card, CardBody, CardFooter, CardHeader, Divider, Flex, HStack, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader, Divider, Flex, HStack, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 
 // Data
 import data from "../../data/db.json";
@@ -17,10 +17,8 @@ const Dashboard = () => {
             {data.tasks.map((taskItem, index) => (
                 <Card key={taskItem.id} borderTop="8px" borderColor="purple.400" bg="white">
                     <CardHeader>
-                        <Flex>
-                            <Box h="50px" w="50px">
-                                <Text>AV</Text>
-                            </Box>
+                        <Flex gap={5}>
+                            <Avatar src={taskItem.img} />
                             <Box>
                                 <Heading as="h3" size="sm">{taskItem.title}</Heading>
                                 <Text>by {taskItem.author}</Text>
